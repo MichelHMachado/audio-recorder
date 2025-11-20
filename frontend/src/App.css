@@ -1,0 +1,22 @@
+.pulsating {
+  animation: pulsate 1s infinite;
+  border: 2px solid rgba(128, 0, 128, 1);
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(128, 0, 128, 0);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(128, 0, 128, 1),
+      0 0 40px rgba(128, 0, 128, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(128, 0, 128, 0);
+  }
+}
